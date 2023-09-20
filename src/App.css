@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #252b48;
+  --secondary-color: #445069;
+  --white-color: #ffffff;
+  --black-color: #000000;
+}
+
+header {
+  background: var(--primary-color);
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+.add-form {
+  margin-top: 1rem;
+  /* background: var(--secondary-color); */
+  padding: 1rem;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.3rem;
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.packing-list {
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: safe;
+  text-align: center;
+  list-style: none;
+  gap: 2rem;
+}
+
+.packing-list li {
+  flex: 1;
+  min-width: 200px;
+  max-width: 300px;
+
+  background: #f1f1f1;
+  border-radius: 12px;
+  cursor: pointer;
+  /* max-width: 250px; */
+  padding: 1rem;
+  transition: all 0.1ss ease-in-out;
+}
+
+.packing-list li:hover {
+  background: #d0d0d0;
+  /* color: var(--white-color); */
+}
+
+form {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+select {
+  /* border-radius: 4px; */
+  padding: 0.4rem 1rem;
+  font-size: 1rem;
+  outline: none;
+  outline: 1px solid var(--primary-color);
+}
+
+select:focus {
+  outline: 2px solid var(--primary-color);
+}
+
+select option {
+  background: var(--primary-color);
+  color: var(--white-color);
+}
+
+input {
+  padding: 0.6rem 1rem;
+  /* margin-left: 1rem; */
+  /* border: none; */
+  /* border: 1px solid var(--primary-color); */
+  outline: 1px solid var(--primary-color);
+}
+
+input:focus {
+  border: 2px solid var(--primary-color);
+}
+
+.filter-dropdown {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+button {
+  padding: 0.6rem 1rem;
+  background: var(--primary-color);
+  color: var(--white-color);
+  cursor: pointer;
+}
